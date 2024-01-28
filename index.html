@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Portfolio</title>
+</head>
+
+<body class="">
+  <div
+    class="bg-black w-full px-[100px] mx-auto my-0 flex justfiy-right items-centre justify-between py-4">
+    <div>
+      <img src="images/logo.png" class="mx-[84px]">
+    </div>
+    <div class="mt-3 mr-[32px]">
+      <ul class="flex text-white">
+        <li><a href="#" class="mx-6 hover:text-teal-600 duration-200">Home</a></li>
+        <li><a href="#" class="mx-6 hover:text-teal-600 duration-200">About</a></li>
+        <li><a href="#" class="mx-6 hover:text-teal-600 duration-200">Services</a></li>
+        <li><a href="#" class="mx-6 hover:text-teal-600 duration-200">Blog</a></li>
+      </ul>
+    </div>
+    <div class="right">
+      <button
+        class="py-[10px] px-[32px] mt-[8px] text-black bg-teal-500 hover:bg-black hover:text-teal-500 text-base font-bold cursor-pointer uppercase border-[2px] border-teal-500 duration-[100ms]">Contact</button>
+    </div>
+  </div>
+  <div class="hero flex items-centre justify-between">
+    <div class="flex-1 justify-right m-[90px] mr-10">
+      <img src="./images/Profile.png" class="border-[3px] border-black p-5"
+        alt="profile pic">
+    </div>
+    <div class="right flex-1">
+      <h6 class="text-teal-500 text-2xl mb-[0.2rem] mt-[5rem] font-medium text tracking-[0.005px]">Muhammad Mehdi</h6>
+      <h1 class="text-cyan-300 text-[4rem]">I'm a</h1>
+      <h2 class="text-teal-600 text-[4rem] -mt-[20px] mb-10 text-special">Web Developer</h2>
+      <script>
+        const text = document.querySelector(".text-special");
+        const textLoad = () => {
+            setTimeout(() => {
+                text.textContent = "Web Designer";
+            }, 0);
+            setTimeout(() => {
+                text.textContent = "Python Developer";
+            }, 4000);
+            setTimeout(() => {
+                text.textContent = "Frontend Developer";
+            }, 8000); //1s = 1000 milliseconds
+        }
+        textLoad();
+        setInterval(textLoad, 12000);
+    </script>
+      <p class="text-green-500 font-[450px] mr-10">I am a 14 year old, Web Devoloper and Python Programmer, and I am currently giving Cambridge A Level Papers and learning to code. I really enjoy solving problems, programming and as well as making things easy to use. I love learning new things. I currently have an experience of 1.5 years and I have made many projects using HTML, CSS, Javascript, Python, Next Js, Typescript and Tailwind CSS
+      </p>
+      <div>
+        <button
+          class="py-[10px] px-[32px] mt-[15px] text-teal-300 hover:bg-teal-400 hover:text-black text-base font-semibold cursor-pointer uppercase border-[2px] border-teal-400 duration-[100ms]">DOWNLOAD
+          CV</button>
+      </div>
+    </div>
+  </div>
+  <section class="p-28">
+    <h1 style="font-size: 2rem ; text-align: center;" class="mb-12">My Skills</h1>
+    <div class="ml-[100px] flex px-32">
+      <a href="#"
+        class="bg-yellow-400 w-[100px] p-[10px] ml-[50px] hover:scale-150 duration-500 m-10 hover:rounded-xl rounded-md text-center"><img
+          src="./images/javascript.png">
+        <p class="text-center mt-2">Javascript</p>
+      </a>
+      <a href="#"
+        class="bg-amber-500 w-[100px] p-[10px] ml-[50px] hover:scale-150 duration-500 m-10 hover:rounded-xl rounded-md"><img
+          src="./images/html.png">
+        <p class="text-center mt-2">HTML</p>
+      </a>
+      <a href="#"
+        class="bg-blue-400 w-[100px] p-[10px] ml-[50px] hover:scale-150 duration-500 m-10 hover:rounded-xl rounded-md"><img
+          src="./images/css.png">
+        <p class="text-center mt-2">CSS</p>
+      </a>
+      <a href="#"
+        class="bg-gray-500 w-[100px] p-[10px] ml-[50px] hover:scale-150 duration-500 m-10 hover:rounded-xl rounded-md"><img
+          src="./images/nextjs.png">
+        <p class="text-center mt-2">Next Js</p>
+      </a>
+      <a href="#"
+        class="bg-cyan-500 w-[100px] p-[10px] ml-[50px] hover:scale-150 duration-500 m-10 hover:rounded-xl rounded-md text-center"><img
+          src="./images/tailwind.png">
+        <p class="text-center mt-2">Tailwind</p>
+      </a>
+      <a href="#"
+        class="bg-yellow-300 w-[100px] p-[10px] ml-[50px] hover:scale-150 duration-500 m-10 hover:rounded-xl rounded-md"><img
+          src="./images/python.png">
+        <p class="text-center mt-2">Python</p>
+      </a>
+      <a href="#"
+        class="bg-[rgb(45,112,199)] w-[100px] p-[10px] ml-[50px] hover:scale-150 duration-500 m-10 hover:rounded-xl rounded-md"><img
+          src="./images/typescript.png" width="70px" class="ml-2 mt-1">
+        <p class="text-center mt-5">Typescript</p>
+      </a>
+    </div>
+    </div>
+  </section>
+  <section class="services" id="services">
+    <div class="container">
+      <h1 class="services-head">Services</h1>
+      <p>All your Coding needs will be covered.</p>
+      <div class="card-grid">
+        <div class="card">
+          <h2>Web </h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, debitis?</p>
+        </div>
+        <div class="card">
+          <h2>Web Development</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, debitis?</p>
+        </div>
+        <div class="card">
+          <h2>Program Development</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, debitis?</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
