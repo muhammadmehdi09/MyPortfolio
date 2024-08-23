@@ -5,13 +5,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles.css">
+  <link rel="icon" href="./images/favicon.ico">
   <script src="https://cdn.tailwindcss.com"></script>
   <title>Portfolio</title>
 </head>
 
-<body class="">
-  <div
-    class="bg-black w-full px-[100px] mx-auto my-0 flex justfiy-right items-centre justify-between py-4">
+<div class="">
+  <div class="bg-black w-full px-[100px] mx-auto my-0 flex justfiy-right items-centre justify-between py-4">
     <div>
       <img src="images/logo.png" class="mx-[84px]">
     </div>
@@ -30,30 +30,46 @@
   </div>
   <div class="hero flex items-centre justify-between">
     <div class="flex-1 justify-right m-[90px] mr-10">
-      <img src="./images/Profile.png" class="border-[3px] border-black p-5"
-        alt="profile pic">
+      <img src="./images/Profile.png" class="border-[3px] border-black p-5" alt="profile pic">
     </div>
     <div class="right flex-1">
       <h6 class="text-teal-500 text-2xl mb-[0.2rem] mt-[5rem] font-medium text tracking-[0.005px]">Muhammad Mehdi</h6>
       <h1 class="text-cyan-300 text-[4rem]">I'm a</h1>
-      <h2 class="text-teal-600 text-[4rem] -mt-[20px] mb-10 text-special">Web Developer</h2>
+      <div class="text-teal-600 text-[4rem] -mt-[20px] mb-10 text-special"> </div>
       <script>
-        const text = document.querySelector(".text-special");
-        const textLoad = () => {
-            setTimeout(() => {
-                text.textContent = "Web Designer";
-            }, 0);
-            setTimeout(() => {
-                text.textContent = "Python Developer";
-            }, 4000);
-            setTimeout(() => {
-                text.textContent = "Frontend Developer";
-            }, 8000); //1s = 1000 milliseconds
+        const texter = document.querySelector(".text-special")
+
+        const texts = ["Web Designer", "Python Developer", "Keen Programmer"]
+        let index = 0
+        let index2 = 0
+
+        function writeText() {
+          num = 100
+          let text = texts[index2]
+          texter.innerText = text.slice(0, index)
+          index++
+
+          if (index > text.length) {
+            index = 0
+            index2++
+          }
+          if (index2 == (texts.length)) {
+            index2 = 0
+          }
+          if (index2 == (texts.length - 1)) {
+            num = 1
+          }
+          if (index == (text.length - 1)) {
+            num = 1
+          }
         }
-        textLoad();
-        setInterval(textLoad, 12000);
-    </script>
-      <p class="text-green-500 font-[450px] mr-10">I am a 14 year old, Web Devoloper and Python Programmer, and I am currently giving Cambridge A Level Papers and learning to code. I really enjoy solving problems, programming and as well as making things easy to use. I love learning new things. I currently have an experience of 1.5 years and I have made many projects using HTML, CSS, Javascript, Python, Next Js, Typescript and Tailwind CSS
+
+        setInterval(writeText,150);
+      </script>
+      <p class="text-green-500 font-[450px] mr-10">I am a 14 year old, Web Devoloper, Python Programmerand a keen Programmer.I am
+        currently giving Cambridge A Level Papers and learning to code. I really enjoy solving problems, programming and
+        as well as making things easy to use. I love learning new things. I currently have an experience of 1.5 years
+        and I have made many projects using HTML, CSS, Javascript, Python, Next Js, Typescript and Tailwind CSS
       </p>
       <div>
         <button
@@ -123,6 +139,6 @@
       </div>
     </div>
   </section>
-</body>
+</div>
 
 </html>

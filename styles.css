@@ -221,23 +221,3 @@ section.services .card-grid .card:hover p {
   font-size: 30px;
   font-weight: 600;
 }
-
-.text-special:before{
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: white;
-  border-left: 2px solid teal;
-  animation: animate 4s steps(17) infinite;
-}
-@keyframes animate{
-  40%, 60%{
-      left: calc(70%);
-  }
-  100%{
-      left: 0%;
-  }
-}
